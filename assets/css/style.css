@@ -1,11 +1,35 @@
 .panel-heading {
   height: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  padding:5px 0 5px 10px;
+}
+
+.panel-title {
+
+}
+
+ul {
+    list-style: none;
+    justify-content: left
+}
+
+li {
+    background-color: #EEE;
+    width: 40%;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.panel-success {
+    padding: .2em;
 }
 
 h4 {
   padding-top: 5em;
 }
 .btn-group {
-  padding:5px 5px -5px; 5px;
+  padding: 0px 0px 0px 0px;
+}
+.glyphicion-remove {
+    padding-right: .1em;
 }

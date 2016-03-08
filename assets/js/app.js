@@ -1,24 +1,25 @@
-$(".glyphicon-remove").click(function(){
-    $("#MC").html(" ");
-    $("#IM").html(" ");
-});
+$(function () {
+    'use strict';
+// $(".glyphicon-remove").click(function(){
+//     $("#MC").html(" ");
+//     $("#IM").html(" ");
+// });
 
 
-var inputs = [ ];
+var userInput = $("input");
 
 $(".btn-success").click(function() {
  $("input").each(function(){
-      inputs.push($(this).val()+"<br>");
-      event.preventDefault();
-      
-    // Attempt to clear out input field after submit
-    //   $inputs.val('').trigger('change');
-    //   $input.trigger('cleared');
-    });
-      console.log(inputs);
-      $("#IM").html(inputs);
 
-      });
+      $("ul").append("<li>" + $(this).val() + "</li>" + "<br>" );
+      event.preventDefault();
+      $(this).val(" ");
+      $("#prompt").html(" ")
+    //   console.log(userInput);
+    //   $("#UL").html(userInput);
+    });
+   });
+  });
 
   //
 
