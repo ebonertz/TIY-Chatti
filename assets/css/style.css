@@ -1,11 +1,67 @@
 .panel-heading {
-  height: 3em;
-  margin-bottom: 2em;
+  height: 5em;
+  margin-bottom: 1em;
+  padding:5px 0 5px 10px;
+
+
+}
+
+h1.panel-title {
+    font-size: x-large;
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+    /*border: 1px solid black;*/
+}
+
+
+ul {
+    list-style: none;
+    justify-content: left
+}
+
+li {
+    background-color: #EEE;
+    width: 60%;
+    border-radius: 3px;
+    margin-left: -35px;
+    padding-left: 5px;
+}
+#UN {
+    padding-left: 5px;
+}
+
+#AM {
+    float:right;
+    background-color: rgb(223,241, 215);
+    width:60%;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+#prompt {
+    padding-left: 5px;
+}
+
+
+/*.col-md-8 {
+    border: 1px solid black;
+
+}*/
+.glyphicon-sunglasses {
+    font-size: x-large;
+    padding-top: 15px;
 }
 
 h4 {
   padding-top: 5em;
 }
 .btn-group {
-  padding:5px 5px -5px; 5px;
+  padding: 0px 0px 0px 0px;
+}
+.glyphicion-remove {
+    padding-right: .1em;
+    font-size: small;
 }
