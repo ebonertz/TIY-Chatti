@@ -1,13 +1,15 @@
 .panel-heading {
-  height: 5em;
+  height: 4em;
   margin-bottom: 1em;
   padding:5px 0 5px 10px;
+}
 
-
+.container {
+    font-size: x-large;
 }
 
 h1.panel-title {
-    font-size: x-large;
+    font-size: xx-large;
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
@@ -40,16 +42,26 @@ li {
     padding-left: 5px;
     border-radius: 3px;
     margin-bottom: 5px;
+    margin-right: 5px;
 }
 #prompt {
     padding-left: 5px;
 }
 
 
-/*.col-md-8 {
-    border: 1px solid black;
+    /*.col-md-12 {
+        max-width:100%;
+        overflow-y:auto;
+        overflow-x:hidden;
+    }*/
 
-}*/
+.col-xs-12 {
+    max-height:300px;
+    max-width:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
 .glyphicon-sunglasses {
     font-size: x-large;
     padding-top: 15px;
@@ -62,6 +74,6 @@ h4 {
   padding: 0px 0px 0px 0px;
 }
 .glyphicion-remove {
-    padding-right: .1em;
-    font-size: small;
+    padding-right: .2em;
+
 }

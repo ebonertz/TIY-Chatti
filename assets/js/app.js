@@ -1,9 +1,9 @@
 $(function () {
     'use strict';
-// $(".glyphicon-remove").click(function(){
-//     $("#MC").html(" ");
-//     $("#IM").html(" ");
-// });
+$(".glyphicon-remove").click(function(){
+    $("#AM").html(" ");
+    $("#IM").html(" ");
+});
 
 
 var userInput = $("input");
@@ -15,7 +15,7 @@ $(".btn-success").click(function() {
       event.preventDefault();
       $(this).val(" ");
       $("#prompt").html(" ");
-      $("#AM").html("Return");
+      $("#AM").html("Hey There");
 
 
     //   for (var i=0, i<10, i++)
