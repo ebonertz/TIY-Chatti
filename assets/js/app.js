@@ -8,16 +8,24 @@ var inputs = [ ];
 
 $(".btn-success").click(function() {
  $("input").each(function(){
-      inputs.push($(this).val());
-  })
+      inputs.push($(this).val()+"<br>");
+      event.preventDefault();
+      
+    // Attempt to clear out input field after submit
+    //   $inputs.val('').trigger('change');
+    //   $input.trigger('cleared');
+    });
+      console.log(inputs);
+      $("#IM").html(inputs);
 
-  event.preventDefault();
-  $("#IM").html(inputs);
-  console.log(inputs);  
+      });
+
+  //
+
 
 
 //          $("#MC").html(" ");
-//          event.preventDefault();
+//
 //         console.log("GIVER");
 //
 //     });
@@ -26,7 +34,7 @@ $(".btn-success").click(function() {
 //     $("#IM").html("messages");
 //     event.preventDefault();
 //     console.log(chatter);
-});
+
 
 
 
