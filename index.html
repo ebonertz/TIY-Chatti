@@ -11,14 +11,15 @@
 </head>
 <body nav-app="chatapp">
     <div class="nav-bar">
-       <div class="col-md-12">
+       <div class="col-md-8">
           <div class="panel panel-success" controller="ChatController">
              <div class="panel-heading">
-                <span class="glyphicon glyphicon-user"></span>
-                <h1 class="panel-title" style="display:inline;">Supachat</h1>
+                <span class="glyphicon glyphicon-sunglasses"></span>
+                <h1 id="app-name" class="panel-title">Supachat </h1>
 
                 <div class="btn-group btn-group-xs pull-right">
-                  <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-remove"></span></button>
+                  <button type="button" class="btn btn-warning">
+                      <span class="glyphicon glyphicon-remove"></span></button>
                 </div>
                 <div class="clearfix"></div>
               </div>
@@ -27,9 +28,12 @@
                 <div class="row">
                   <div class="col-xs-12" style="max-height:300px;max-width:100%;overflow-y:auto;overflow-x:hidden;">
                     <div class="chat">
-                          <div id="MC" class="user-initials"><strong>Evan:</strong></div><span show="chatMessages.length === 0" id="prompt">Say something!</span>
+                          <div id="UN" class="user-initials"><strong>Evan:</strong>
+                              <span show="chatMessages.length === 0" id="prompt">Say something!</span>
+                            </div>
 
-                        <ul id="IM" >    </ul>
+                        <ul id="IM" ></ul>
+                        <div id="AM"></div>
                     </div>
 
                     </div>
@@ -37,13 +41,13 @@
               </div> <!-- This closes the panel body -->
             </div> <!-- //This closes the chat panel -->
 
-              <div class="panel-footer">
+              <div class="footer">
                 <form>
                   <div class="input-group input-group-sm text-field">
-                    <span class="input-group-addon"> Evan </span>
+                    <span class="input-group-addon"><strong> Evan </strong> </span>
                     <input id="chatter" type="text" name="chatter" class="form-control chatter" />
                         <span class="input-group-btn">
-                          <button class="btn btn-success" type="submit">Send</button>
+                          <button class="btn btn-success send" type="submit">Send</button>
                         </span>
                   </div>
                 </form>
@@ -60,7 +64,7 @@
   <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
   <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="assets/js/app.js"></script>
-  <script src="assets/js/atPoster.js"></script>
+  <!-- <script src="assets/js/atPoster.js"></script> -->
   <!-- <script src="assets/js/test.js"></script> -->
 
 
