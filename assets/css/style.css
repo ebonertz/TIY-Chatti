@@ -1,0 +1,11 @@
+.panel-heading {
+  height: 3em;
+  margin-bottom: 2em;
+}
+
+h4 {
+  padding-top: 5em;
+}
+.btn-group {
+  padding:5px 5px -5px; 5px;
+}
