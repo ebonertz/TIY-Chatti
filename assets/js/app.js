@@ -4,26 +4,44 @@ $(".glyphicon-remove").click(function(){
     $("#AM").html(" ");
     $("#IM").html(" ");
 });
+        var userInput = $("input");
 
-
-var userInput = $("input");
-
-$(".btn-success").click(function() {
- $("input").each(function(){
+        $(".btn-success").click(function() {
+            $("input").each(function(){
 
       $("ul").append("<li>" + $(this).val() + "</li>" + "<br>" );
       event.preventDefault();
-      $(this).val(" ");
       $("#prompt").html(" ");
-      $("#AM").html("Hey There");
 
+      if($(this).val() == "@help") {
+          $("ul").append("<li>How can I help you?</li>")
+      }
 
-    //   for (var i=0, i<10, i++)
-    //   if (@moviename === " ") {
-    //       atPoster
-    //   }
-    // //   console.log(userInput);
-    //   $("#UL").html(userInput);
+      else if($(this).val().includes("@gh")){
+          ghprofile();
+      }
+        $(this).val("");
     });
    });
   });
+
+      //Check if input === @github username
+      //then getJson
+        // $.getJSON(("http://api.github.com/users/" + myUser), function (value) {
+        //       console.log(value.company);
+        //       $("#AM").html(value.company);
+        //   });
+        // PSUEDO CODE
+
+    /// Attempt at FOR LOOP
+//       for (var i=0, i<10, i++){
+//        if (userInput[0]).value == " ") {
+//           $("#AM").html("Hey There");
+//       }
+//        else if (userInput[0].includes === "help"){
+//          $("#AM").html("What can we help with")
+//     };
+//    };
+
+    // //   console.log(userInput);
+    //   $("#UL").html(userInput);
