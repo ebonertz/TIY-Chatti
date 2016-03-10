@@ -14,11 +14,17 @@ $(".glyphicon-remove").click(function(){
       $("#prompt").html(" ");
 
       if($(this).val() == "@help") {
-          $("ul").append("<li>How can I help you?</li>")
+          $("ul").append("<li class='response'>" + "Chicka Chicka Yeah" + "<br>" + "</li>" )
+      }
+     else if($(this).val() == "@hello") {
+          $("ul").append("<li class='response'>" + "Gangstas!" + "<br>" + "</li>" )
       }
 
       else if($(this).val().includes("@gh")){
           ghprofile();
+      }
+      else if($(this).val().includes("@nyt")){
+          nytimes();
       }
         $(this).val("");
     });
